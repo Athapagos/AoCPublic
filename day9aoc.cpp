@@ -22,9 +22,9 @@ void FillVectorWtihStringLine(std::vector<std::string>& Vector)
     }
 }
 
-unsigned long int GenerateCheckSum(std::vector<std::string> & Vector)
+unsigned long long int GenerateCheckSum(std::vector<std::string> & Vector)
 {
-    unsigned long int Checksum = 0;
+    unsigned long long int Checksum = 0;
     for(int i = 0 ; i < Vector.size()&&Vector[i] != "" && Vector[i] != "."; i++)
     {
         Checksum += stoi(Vector[i])*i;
