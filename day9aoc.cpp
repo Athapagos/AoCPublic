@@ -38,7 +38,7 @@ int main()
     std::vector<std::string> vctrDiskmap;
     std::string strInput_Line;
     //std::cin>> strInput_Line;
-    flInput_file.open("C:\\Users\\USER\\Desktop\\AoC2024Inputs\\aocday9.txt");
+    flInput_file.open("Input.txt");
     if (flInput_file.is_open())
     {
         std::getline(flInput_file,strInput_Line);
