@@ -2,8 +2,8 @@
 #include <fstream>
 #include <vector>
 
-int CountXmas(std::vector<std::string> Input);
-int CountXShapedMAS(std::vector<std::string> Input);
+int CountXmas(std::vector<std::string>& Input);
+int CountXShapedMAS(std::vector<std::string>& Input);
 
 int main(){
     std::ifstream input_file;
@@ -30,7 +30,7 @@ int main(){
     return 0;
 }
 
-int CountXmas(std::vector<std::string> Input){
+int CountXmas(std::vector<std::string>& Input){
     //cycles , 8 directions, find the X
     int Result = 0;
     std::string TempStr;
@@ -109,7 +109,7 @@ int CountXmas(std::vector<std::string> Input){
     return Result;
 }
 
-int CountXShapedMAS(std::vector<std::string> Input){
+int CountXShapedMAS(std::vector<std::string>& Input){
     //cycles , 8 directions, find the X
     int Result = 0;
     bool is_NW_SE_MAS = false;
